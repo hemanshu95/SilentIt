@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hemanshu95.android.silentit" >
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.hemanshu95.android.silentit.AlarmManagerBroadcastReceiver">
+        </receiver>
+        <activity
+            android:name=".Input"
+            android:label="@string/title_activity_input"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hemanshu95.android.silentit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TimeTaker"
+            android:label="@string/title_activity_time_taker"
+            android:parentActivityName=".Input" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hemanshu95.android.silentit.Input" />
+        </activity>
+        <activity
+            android:name=".DateTaker"
+            android:label="@string/title_activity_date_taker" >
+        </activity>
+    </application>
+
+</manifest>

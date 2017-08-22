@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SilentIt</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="volume">Volume :</string>
+    <string name="vibration">Vibration : </string>
+    <string name="start">START</string>
+    <string name="end">END</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_input">Input</string>
+    <string name="title_activity_time_taker">TimeTaker</string>
+    <string name="title_activity_date_taker">DateTaker</string>
+</resources>
